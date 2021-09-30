@@ -9,4 +9,9 @@ public class Main {
     * (also referred to as a one-time pad)
     */
 
+    public static void main(String[] args){
+
+        Encryption encryption = new Encryption();
+
+    }
 }
