@@ -9,7 +9,6 @@ public class Encryption {
     private char character;
     private String line;
     private char[] letters;
-    private char[] secretLetters;
 
     Encryption(){
         ArrayList<Character> list = new ArrayList<>();
@@ -83,7 +82,24 @@ public class Encryption {
     }
 
     private void encrypt(){
+        System.out.println("Enter a message for encryption : ");
+        String message = scanner.nextLine();
 
+        letters = message.toCharArray();
+
+        for(int i = 0; i < letters.length; i++){
+            for(int j = 0; j < list.size(); j++){
+                if(letters[i] == list.get(j)){
+                    letters[i] = shuffledList.get(j);
+                    break;
+                }
+            }
+        }
+        System.out.println("Encrypted message : ");
+        for(char x : letters ){
+            System.out.print(x);
+        }
+        System.out.println();
     }
 
     private void decrypt(){
