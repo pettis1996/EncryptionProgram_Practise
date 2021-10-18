@@ -1,2 +1,12 @@
 # EncryptionProgram_Practise
 :white_check_mark: MESSAGE ENCRYPTION USING A GENERATED KEY :white_check_mark:
+
+JAVA LANGUAGE
+
+- GET GENERATED KEY
+- GENERATE NEW KEY
+- ENCRYPT A MESSAGE 
+- DECRYPT A MESSAGE
+
+TO ADD: 
+- INSERT KEY
