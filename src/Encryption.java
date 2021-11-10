@@ -19,6 +19,15 @@ public class Encryption {
         askQuestion();
     }
 
+    /*
+    * the main menu shown on user's screen
+    * user has to enter the following to get features of the program :
+    *       - n or N for generating a new encryption/decryption key
+    *       - g or G for getting the used key printed on screen
+    *       - e or E for entering a message to encrypt using the encryption key
+    *       - d or D for entering an already encrypted message and get the starting message shown on screen
+    *       - q or Q for exiting the program safely
+    * */
     private void askQuestion(){
         while(true){
             System.out.println("\nWhat do you want to do ?");
@@ -52,6 +61,17 @@ public class Encryption {
         }
     }
 
+    // Class used to get an already generated key from the user
+    // and use it as main key for encryption/decryption.
+
+    /*private void useExistingKey(){
+
+    }*/
+
+    /*
+    * Class for generating a new encryption/decryption key
+    * from ASCII table of characters
+    * */
     private void newKey(){
 
         character = ' ';
@@ -69,6 +89,11 @@ public class Encryption {
 
     }
 
+    /*
+    * Class used to show the already generated and used encryption/decryption key
+    * on the user's screen
+    * Program generates a key by default when entering.
+    * */
     private void getKey(){
         System.out.println("Key : ");
 
@@ -81,6 +106,10 @@ public class Encryption {
         }
     }
 
+    /*
+    * Class used to encrypt a message from the user's keyboard/input
+    * using the current used encrypting/decrypting key
+    * */
     private void encrypt(){
         System.out.println("Enter a message for encryption : ");
         String message = scanner.nextLine();
@@ -102,6 +131,9 @@ public class Encryption {
         System.out.println();
     }
 
+    /*
+    * Class used to accept an already encrypted message
+    * */
     private void decrypt(){
         System.out.println("Enter a message for decryption : ");
         String message = scanner.nextLine();
